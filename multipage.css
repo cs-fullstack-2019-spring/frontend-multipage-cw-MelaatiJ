@@ -1,0 +1,63 @@
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40%;
+    grid-template-areas:
+        "home about projects contact"
+        "section section section section"
+        "section section section section"
+        "footer footer footer footer";
+    background: white;
+    color: black;
+    border: 1px solid indianred;
+    padding:20px;
+    text-align: center;
+
+
+
+}
+
+#nav1
+{
+    grid-area: home;
+    background: black;
+    color:white;
+    border: 2px solid
+
+
+
+}
+#nav2
+{
+    grid-area: about;
+}
+
+#nav3
+{
+    grid-area: projects;
+}
+
+#nav4
+{
+    grid-area: contact;
+}
+
+section
+{
+    grid-area: section;
+    background:indianred;
+    text-align: center;
+    font-size: 300%;
+    color: white;
+    padding: 200px;
+
+}
+
+footer
+{
+    grid-area: footer;
+    background: white;
+    color: black;
+    padding:20px;
+}
