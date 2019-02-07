@@ -1,48 +1,49 @@
+/*my container is in a div that has all my buttons inside */
 .container
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 40%;
+    display: grid;   /*gets my grid read*/
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*got my four columns*/
+    height:60px;
     grid-template-areas:
         "home about projects contact"
         "section section section section"
         "section section section section"
         "footer footer footer footer";
-    background: white;
+    background: white;   /*background white on my divs*/
     color: black;
     border: 1px solid indianred;
     padding:20px;
-    text-align: center;
+    text-align: center; /*centering the text*/
 
 
 
 }
-
+/*my id i made for my first page */
 #nav1
 {
+
     grid-area: home;
     background: black;
-    color:white;
-    border: 2px solid
-
-
-
+    /*color:white;*/
+    /*border: 2px solid*/
 }
+/*my id for my second page*/
 #nav2
 {
     grid-area: about;
 }
-
+/*my id for my third page*/
 #nav3
 {
     grid-area: projects;
 }
-
+/*my id for my fourth page*/
 #nav4
 {
     grid-area: contact;
 }
-
+/*aligning my text to the center and setting the font size to be larger*/
+/*set the back ground color*/
 section
 {
     grid-area: section;
@@ -53,11 +54,13 @@ section
     padding: 200px;
 
 }
-
+/*setting my background white and the color of the text black*/
+/*added some padding*/
 footer
 {
     grid-area: footer;
     background: white;
     color: black;
     padding:20px;
+    border: 1px solid indianred;
 }
